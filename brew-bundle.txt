@@ -56,15 +56,17 @@ brew "gnutls"
 brew "grep"
 brew "gnu-tar"
 brew "gawk"
+brew "watch"
+brew "wget"
 
 # Non-GNU Utils
 brew "bat"
+brew "curl"
 brew "exa"
 brew "htop"
 brew "trash"
 brew "tree"
-brew "watch"
-brew "wget"
+brwe "vim"
 
 # BEGIN CASK
 
