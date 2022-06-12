@@ -45,6 +45,13 @@ if [ ! -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
   (echo '💰  Installing oh-my-zsh' && yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)")
 fi
 
+# Install Homebrew apps
+echo '🍺  Installing Homebrew apps' && /bin/zsh -c "brew bundle --file=brew-bundle.txt"
+brew cleanup
+
+# Configure Java
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 # Install chezmoi
 command -v chezmoi >/dev/null 2>&1 || \
   (echo '👊  Installing chezmoi' && brew install chezmoi)
