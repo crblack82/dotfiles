@@ -118,4 +118,4 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Dock" "Finder" "iTerm2"; do killall "${app}" 2>/dev/null; done
+for app in "Dock" "Finder"; do killall "${app}" 2>/dev/null; done
