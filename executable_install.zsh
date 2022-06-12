@@ -46,15 +46,7 @@ if [ ! -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
 fi
 
 # Install Homebrew apps
-command -v brew >/dev/null 2>&1 || \
-  (echo '🍺  Installing Homebrew taps' && /bin/bash -c "brew bundle --file=brew-taps.txt")
-
-command -v brew >/dev/null 2>&1 || \
-  (echo '🍺  Installing Homebrew apps' && /bin/bash -c "brew bundle --file=brew-appss.txt")
-
-# Install Homebrew casks
-command -v brew >/dev/null 2>&1 || \
-  (echo '🍺  Installing Homebrew casks' && /bin/bash -c "brew bundle --file=brew-casks.txt")
+echo '🍺  Installing Homebrew apps' && /bin/bash -c "brew bundle --file=brew-bundle.txt"
 
 # Install chezmoi
 command -v chezmoi >/dev/null 2>&1 || \
