@@ -1,42 +1,20 @@
-# dotfiles
+# github.com/crblack82/dotfiles
 
-A simple repository for managing my mac configuration
+dotfiles, managed with [`chezmoi`](https://github.com/crblack82/dotfiles).
 
-## Getting Started
+## Install
 
-### Dependencies
+This'll install Homebrew and chezmoi. After installation `chezmoi` will be initialized.
 
-* M1 Macbook Pro
-* MacOS Monterray
-
-### Installing
-
-* Checkout configuration to home directory
-
-```
-cd ~
-git clone https://github.com/crblack82/dotfiles.git
+```shell
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/crblack82/dotfiles/master/executable_install.zsh)"
 ```
 
-### Executing program
+## Manual install
 
-* Run install.zsh from home directory
+Prerequisite: Homebrew & chezmoi
+
+```shell
+# Setup
+chezmoi init https://github.com/crblack82/dotfiles.git
 ```
-cd ~
-./install.zsh
-```
-
-## Authors
-
-[@crblack82](https://twitter.com/crblack82)
-
-## License
-
-This project is licensed under the Apache 2.0 License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [chezmoi](https://www.chezmoi.io)
-* [homebrew](https://brew.sh)
-* [ohmyzsh](https://ohmyz.sh)

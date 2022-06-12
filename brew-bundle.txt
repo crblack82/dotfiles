@@ -1,4 +1,4 @@
-#TAPS
+# BEGIN TAP
 
 tap "aws/tap"
 tap "buo/cask-upgrade"
