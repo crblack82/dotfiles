@@ -128,8 +128,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-# Aliases
-
-alias burp="sudo -v && brew update && brew upgrade && brew cu -a -y"
-alias pip=pip3
-alias python=python3
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+for file in ~/.{path,aliases,exports,functions}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
