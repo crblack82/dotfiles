@@ -1,0 +1,50 @@
+# Development
+brew angular-cli
+brew go
+brew node
+brew maven
+brew python
+brew yarn
+
+# Documentation
+brew tldr
+
+# Fun
+brew figlet
+
+# GIT
+brew gh
+brew git
+
+# JSON
+brew jo
+brew jq
+
+# Operations
+brew ansible
+brew awscli
+brew aws-sam-cli
+brew aws-cdk
+brew mas
+
+# Networking
+brew nmap
+brew pssh
+brew speedtest-cli
+
+# Shell
+brew powerlevel10k
+brew zsh-autosuggestions
+brew zsh-completions
+brew zsh-history-substring-search
+brew zsh-syntax-highlighting
+
+# GNU Utils
+brew watch
+brew wget
+
+# Non-GNU Utils
+brew curl
+brew htop
+brew trash
+brew tree

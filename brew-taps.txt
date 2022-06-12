@@ -1,0 +1,3 @@
+tap aws/tap
+tap buo/cask-upgrade
+tap romkatv/powerlevel10k
