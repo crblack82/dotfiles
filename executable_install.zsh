@@ -48,6 +48,9 @@ fi
 # Install Homebrew apps
 echo '🍺  Installing Homebrew apps' && /bin/bash -c "brew bundle --file=brew-bundle.txt"
 
+# Configure Java
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 # Install chezmoi
 command -v chezmoi >/dev/null 2>&1 || \
   (echo '👊  Installing chezmoi' && brew install chezmoi)

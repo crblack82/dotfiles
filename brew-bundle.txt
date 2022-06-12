@@ -9,6 +9,7 @@ tap "romkatv/powerlevel10k"
 # Development
 brew "angular-cli"
 brew "go"
+brew "java"
 brew "node"
 brew "maven"
 brew "python"
