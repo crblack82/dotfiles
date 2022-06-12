@@ -32,9 +32,6 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Enable auto appearence mode
 defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
 
-# Disable last login prompt
-touch ~/.hushlogin
-
 ###############################################################################
 # Dock                                                                        #
 ###############################################################################
