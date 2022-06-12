@@ -62,11 +62,16 @@ brew "wget"
 # Non-GNU Utils
 brew "bat"
 brew "curl"
+brew "duf"
+brew "dust"
 brew "exa"
+brew "fd"
 brew "htop"
+brew "ripgrep"
+brew "sd"
 brew "trash"
 brew "tree"
-brwe "vim"
+brew "vim"
 
 # BEGIN CASK
 
