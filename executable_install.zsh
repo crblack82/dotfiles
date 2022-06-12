@@ -24,7 +24,7 @@ if [ ! -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
 fi
 
 # Install Homebrew apps
-echo '🍺  Installing Homebrew apps' && /bin/zsh -c "brew bundle --file=brew-bundle.txt"
+echo '🍺  Installing apps' && /bin/zsh -c "brew bundle --file=brew-bundle.txt"
 brew cleanup
 
 # Post configuration
