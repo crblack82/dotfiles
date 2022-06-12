@@ -97,28 +97,28 @@ cask "vmware-horizon-client"
 
 # BEGIN MAS
 
-mas "Things", id: 904280696
-mas "Pixelmator Pro", id: 1289583905
-mas "Keynote", id: 409183694
-mas "Microsoft OneNote", id: 784801555
-mas "OneDrive", id: 823766827
-mas "Microsoft Excel", id: 462058435
-mas "Twitter", id: 1482454543
-mas "Amphetamine", id: 937984704
 mas "1Password for Safari", id: 1569813296
-mas "DaisyDisk", id: 411643860
-mas "Microsoft PowerPoint", id: 462062816
-mas "Textual IRC Client", id: 1262957439
-mas "Darkroom", id: 953286746
-mas "Numbers", id: 409203825
-mas "Xcode", id: 497799835
-mas "Reeder", id: 1529448980
-mas "Microsoft Outlook", id: 985367838
-mas "Fantastical", id: 975937182
+mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
-mas "Pages", id: 409201541
-mas "iMovie", id: 408981434
 mas "CotEditor", id: 1024640650
-mas "NordVPN", id: 905953485
-mas "Microsoft Word", id: 462054704
+mas "DaisyDisk", id: 411643860
+mas "Darkroom", id: 953286746
+mas "Fantastical", id: 975937182
+mas "iMovie", id: 408981434
 mas "Keka", id: 470158793
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Outlook", id: 985367838
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+#mas "NordVPN", id: 905953485
+mas "OneDrive", id: 823766827
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 1289583905
+mas "Reeder", id: 1529448980
+mas "Textual IRC Client", id: 1262957439
+mas "Things", id: 904280696
+mas "Twitter", id: 1482454543
+mas "Xcode", id: 497799835
