@@ -48,6 +48,15 @@ brew "zsh-completions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 
+# GNU Utils
+brew "coreutils"
+brew "gnu-indent"
+brew "gnu-sed"
+brew "gnutls"
+brew "grep"
+brew "gnu-tar"
+brew "gawk"
+
 # Non-GNU Utils
 brew "bat"
 brew "exa"
