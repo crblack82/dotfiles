@@ -5,3 +5,6 @@ export EDITOR='vim'
 
 # set JAVA_HOME
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
+
+# Homebrew
+export HOMEBREW_NO_ENV_HINTS=true
