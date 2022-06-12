@@ -14,6 +14,7 @@ brew "node"
 brew "maven"
 brew "pipenv"
 brew "python"
+brew "rust"
 brew "yarn"
 
 # Documentation
