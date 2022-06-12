@@ -28,7 +28,7 @@ cd ~
 
 ## Authors
 
-ex. [@crblack82](https://twitter.com/crblack82)
+[@crblack82](https://twitter.com/crblack82)
 
 ## License
 
