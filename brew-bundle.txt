@@ -49,6 +49,7 @@ brew "zsh-syntax-highlighting"
 
 # Non-GNU Utils
 brew "bat"
+brew "exa"
 brew "htop"
 brew "trash"
 brew "tree"
