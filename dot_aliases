@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# Shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dv="cd ~/Development"
+
+# Alternatives
+alias pip=pip3
+alias python=python3
+
+# Combinations
+alias burp="sudo -v && brew update && brew upgrade && brew cu -a -y"
+
+# Instant webserver
+alias pserver='python3 -m http.server'
