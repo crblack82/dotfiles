@@ -48,6 +48,7 @@ brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 
 # Non-GNU Utils
+brew "bat"
 brew "htop"
 brew "trash"
 brew "tree"
