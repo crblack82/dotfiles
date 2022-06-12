@@ -119,6 +119,6 @@ mas "Bear", id: 1091189122
 mas "Pages", id: 409201541
 mas "iMovie", id: 408981434
 mas "CotEditor", id: 1024640650
-#mas "NordVPN", id: 905953485
+mas "NordVPN", id: 905953485
 mas "Microsoft Word", id: 462054704
 mas "Keka", id: 470158793
