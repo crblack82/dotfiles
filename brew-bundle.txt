@@ -12,6 +12,7 @@ brew "go"
 brew "java"
 brew "node"
 brew "maven"
+brew "pipenv"
 brew "python"
 brew "yarn"
 
