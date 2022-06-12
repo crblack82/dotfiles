@@ -1,4 +1,7 @@
 #!/bin/zsh
 
 # Make vim the default editor.
-export EDITOR='vim';
+export EDITOR='vim'
+
+# set JAVA_HOME
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
