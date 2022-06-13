@@ -2,7 +2,8 @@
 
 # Shortcuts
 alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
+alias dt="cd ~/iCloud/Desktop"
+alias dev="cd ~/iCloud/Development"
 
 # Alternatives
 alias pip=pip3
