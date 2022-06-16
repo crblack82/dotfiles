@@ -8,6 +8,7 @@ tap "romkatv/powerlevel10k"
 
 # Development
 brew "angular-cli"
+brew "dotnet"
 brew "go"
 brew "java"
 brew "node"
