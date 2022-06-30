@@ -54,28 +54,6 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain KeyRepeat -int 2
 
-# Configure key bindings so that home/end keys work
-mkdir -p ~/Library/KeyBindings
-echo '{
-/* Remap Home / End keys */
-/* Home Button*/
-"\UF729" = "moveToBeginningOfLine:";
-/* End Button */
-"\UF72B" = "moveToEndOfLine:";
-/* Shift + Home Button */
-"$\UF729" = "moveToBeginningOfLineAndModifySelection:";
-/* Shift + End Button */
-"$\UF72B" = "moveToEndOfLineAndModifySelection:";
-/* Ctrl + Home Button */
-"^\UF729" = "moveToBeginningOfDocument:";
-/* Ctrl + End Button */
-"^\UF72B" = "moveToEndOfDocument:";
- /* Shift + Ctrl + Home Button */
-"$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:";
-/* Shift + Ctrl + End Button*/
-"$^\UF72B" = "moveToEndOfDocumentAndModifySelection:";
-}' > ~/Library/KeyBindings/DefaultKeyBinding.dict
-
 ###############################################################################
 # Trackpad                                                                    #
 ###############################################################################
