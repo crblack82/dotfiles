@@ -16,6 +16,7 @@ brew "pyenv"
 brew "rust"
 
 # Documentation
+brew "cheat"
 brew "tldr"
 
 # Fun
