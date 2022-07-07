@@ -1,10 +1,21 @@
 #!/bin/zsh
 
-# Make vim the default editor.
+# Set EDITOR
 export EDITOR='vim'
 
-# set JAVA_HOME
+# Set JAVA_HOME
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
 
-# Homebrew
+# Disable homebrew noise
 export HOMEBREW_NO_ENV_HINTS=true
+
+# Set nvm configuration
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Set pyenv configuration
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
