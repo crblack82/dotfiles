@@ -7,8 +7,6 @@ tap "romkatv/powerlevel10k"
 # BEGIN BREW
 
 # Development
-brew "angular-cli"
-brew "dotnet"
 brew "go"
 brew "java"
 brew "nvm"
@@ -16,7 +14,6 @@ brew "maven"
 brew "pipenv"
 brew "pyenv"
 brew "rust"
-brew "yarn"
 
 # Documentation
 brew "tldr"
@@ -35,7 +32,6 @@ brew "jq"
 # Operations
 brew "awscli"
 brew "aws-sam-cli"
-brew "aws-cdk"
 brew "mas"
 
 # Networking
