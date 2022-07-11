@@ -16,7 +16,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install Homebrew
 command -v brew >/dev/null 2>&1 || \
-  (echo '🍺  Installing Homebrew' && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
+  (echo '🍺 3Installing Homebrew' && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
 
 # Install Oh My Zsh
 if [ ! -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
