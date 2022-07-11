@@ -88,6 +88,7 @@ cask "docker"
 cask "discord"
 cask "drawio"
 cask "firefox"
+cask "fluor"
 cask "github"
 cask "google-chrome"
 cask "google-drive"
@@ -144,3 +145,4 @@ mas "Textual IRC Client", id: 1262957439
 mas "Things", id: 904280696
 mas "Twitter", id: 1482454543
 mas "Xcode", id: 497799835
+mas "Yoink", id: 457622435
