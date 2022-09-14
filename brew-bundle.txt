@@ -140,6 +140,7 @@ mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Parcel", id: 639968404
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
 mas "Textual IRC Client", id: 1262957439
