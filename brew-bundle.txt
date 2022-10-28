@@ -6,6 +6,9 @@ tap "romkatv/powerlevel10k"
 
 # BEGIN BREW
 
+# Containers
+brew "colima"
+
 # Development
 brew "brew-gem"
 brew "go"
