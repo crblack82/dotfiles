@@ -2,3 +2,4 @@
 
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/Users/$USER/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
