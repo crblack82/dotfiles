@@ -7,12 +7,14 @@ tap "romkatv/powerlevel10k"
 # BEGIN BREW
 
 # Development
+brew "brew-gem"
 brew "go"
 brew "java"
 brew "nvm"
 brew "maven"
 brew "pipenv"
 brew "pyenv"
+brew "ruby"
 brew "rust"
 
 # Documentation
@@ -33,6 +35,7 @@ brew "jq"
 brew "awscli"
 brew "aws-sam-cli"
 brew "cfn-lint"
+brew "cfn-nag"
 brew "mas"
 
 # Networking
