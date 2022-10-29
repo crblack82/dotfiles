@@ -9,6 +9,7 @@ tap "romkatv/powerlevel10k"
 # Containers
 brew "colima"
 brew "docker"
+brew "docker-compose"
 
 # Development
 brew "brew-gem"
