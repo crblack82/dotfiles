@@ -8,6 +8,7 @@ tap "romkatv/powerlevel10k"
 
 # Containers
 brew "colima"
+brew "docker"
 
 # Development
 brew "brew-gem"
@@ -90,7 +91,6 @@ cask "appcleaner"
 cask "bartender"
 cask "bettertouchtool"
 cask "cleanshot"
-cask "docker"
 cask "discord"
 cask "drawio"
 cask "firefox"
