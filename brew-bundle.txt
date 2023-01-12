@@ -12,7 +12,6 @@ brew "docker"
 brew "docker-compose"
 
 # Development
-brew "brew-gem"
 brew "go"
 brew "java"
 brew "nvm"
@@ -40,7 +39,6 @@ brew "jq"
 brew "awscli"
 brew "aws-sam-cli"
 brew "cfn-lint"
-brew "cfn-nag"
 brew "mas"
 
 # Networking
