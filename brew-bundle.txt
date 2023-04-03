@@ -138,8 +138,9 @@ mas "DaisyDisk", id: 411643860
 mas "Dark Noise", id: 1465439395
 mas "Darkroom", id: 953286746
 mas "Fantastical", id: 975937182
+mas "GarageBand", id: 682658836
+mas "HP Smart", id: 1474276998
 mas "HextEdit", id: 1557247094
-mas "iMovie", id: 408981434
 mas "Keka", id: 470158793
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
@@ -154,8 +155,12 @@ mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
+mas "SnippetsLab", id: 1006087419
 mas "Speedtest", id: 1153157709
 mas "Textual IRC Client", id: 1262957439
 mas "Things", id: 904280696
+mas "Tooth Fairy", id: 1191449274
 mas "Twitter", id: 1482454543
 mas "Xcode", id: 497799835
+mas "Yoink", id: 457622435
+mas "iMovie", id: 408981434
