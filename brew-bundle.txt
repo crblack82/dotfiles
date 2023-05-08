@@ -160,7 +160,6 @@ mas "SnippetsLab", id: 1006087419
 mas "Speedtest", id: 1153157709
 mas "Textual IRC Client", id: 1262957439
 mas "Things", id: 904280696
-mas "Tooth Fairy", id: 1191449274
 mas "Twitter", id: 1482454543
 mas "Xcode", id: 497799835
 mas "Yoink", id: 457622435
