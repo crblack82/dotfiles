@@ -18,6 +18,7 @@ brew "nvm"
 brew "maven"
 brew "pipenv"
 brew "pyenv"
+brew "pyenv-virtualenv"
 brew "ruby"
 brew "rust"
 
