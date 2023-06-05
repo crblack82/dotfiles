@@ -4,7 +4,8 @@
 export EDITOR='vim'
 
 # Set JAVA_HOME
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-20.jdkk/Contents/Home
 
 # Disable homebrew noise
 export HOMEBREW_NO_ENV_HINTS=true
