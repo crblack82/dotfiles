@@ -7,6 +7,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
+" Make Vim more useful
+set nocompatible
+
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 
@@ -104,7 +107,6 @@ set title
 
 " Show the (partial) command as it’s being typed
 set showcmd
-
 " Use relative line numbers
 if exists("&relativenumber")
 	set relativenumber

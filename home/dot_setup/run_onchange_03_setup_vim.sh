@@ -2,6 +2,12 @@
 
 set -eufo pipefail
 
+# Creating backup, swaps and undo directory
+mkdir -p $HOME/backups
+mkdir -p $HOME/swaps
+mkdir -p $HOME/undo
+
+# Create plugin directory
 mkdir -p "$HOME/.vim/pack/myplugins/start"
 cd "$HOME/.vim/pack/myplugins/start"
 
