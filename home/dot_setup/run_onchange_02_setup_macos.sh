@@ -26,8 +26,6 @@ set -eufo pipefail
 #   fi
 # fi
 
-echo '🍎 Configuring macos.'
-
 # # Close any open System Preferences panes, to prevent them from overriding the settings we’re about to change
 # osascript -e 'tell application "System Preferences" to quit'
 
