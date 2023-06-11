@@ -175,3 +175,5 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 ###############################################################################
 
 for app in "Dock" "Finder" "Safari"; do killall "${app}" 2>/dev/null; done
+
+echo '🍎 Configuring complete.'
