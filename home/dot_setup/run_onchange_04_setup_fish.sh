@@ -1,10 +1,5 @@
 #!/bin/zsh
 
-# Setup fisher plugins
-fisher install pure-fish/pure
-fisher install edc/bass
-fisher install jethrokuan/z
-
 # Setup paths
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/opt/curl/bin $fish_user_paths
