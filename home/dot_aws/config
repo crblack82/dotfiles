@@ -1,0 +1,12 @@
+[default]
+region = us-east-1
+aws_access_key_id = AKIAX64KQCJHZECVRYAL
+aws_secret_access_key = 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
+
+[profile awsdev]
+region=us-east-1
+credential_process = sh -c "op item get carson-crblack82-awsdev --format=json --fields label=AccessKeyId,label=SecretAccessKey --vault "Personal"| jq 'map({key: .label, value: .value}) | from_entries + {Version: 1}'"
+
+[profile awsprd]
+region=us-east-1
+credential_process = sh -c "op item get carson-crblack82-awsprd --format=json --fields label=AccessKeyId,label=SecretAccessKey --vault "Personal"| jq 'map({key: .label, value: .value}) | from_entries + {Version: 1}'"
