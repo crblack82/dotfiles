@@ -2,10 +2,13 @@
 
 set -eufo pipefail
 
-# Ask for the administrator password upfront and continuously refresh it in the background
+# Ask for the administrator password upfront
 sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Install Rosetta if necessary
 if ! pgrep -x "oahd" > /dev/null 2>&1; then
   sudo /usr/sbin/softwareupdate --install-rosetta --agree-to-license
   if [[ $? -eq 0 ]]; then
@@ -16,6 +19,7 @@ if ! pgrep -x "oahd" > /dev/null 2>&1; then
   fi
 fi
 
+# Install Xcode tools if necessary
 if ! xcode-select -p > /dev/null 2>&1; then
   sudo xcode-select --install
   if [[ $? -eq 0 ]]; then
@@ -34,6 +38,12 @@ osascript -e 'tell application "System Preferences" to quit'
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Set highlight color to green
+defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
