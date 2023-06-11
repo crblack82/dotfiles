@@ -11,3 +11,7 @@ fi
 if [ ! -d "$HOME/.vim/pack/myplugins/start/syntastic" ]; then
 	git clone https://github.com/vim-syntastic/syntastic.git
 fi
+
+if [ ! -d "$HOME/.vim/pack/myplugins/start/fzf" ]; then
+	git clone https://github.com/junegunn/fzf.vim.git
+fi
