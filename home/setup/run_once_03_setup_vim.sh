@@ -2,6 +2,8 @@
 
 set -eufo pipefail
 
+echo `whoami`
+
 mkdir -p /Users/carson/.vim/pack/myplugins/start
 cd /Users/carson/.vim/pack/myplugins/start
 
