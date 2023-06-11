@@ -1,1 +1,1 @@
-print "run once"
+echo "run once"
