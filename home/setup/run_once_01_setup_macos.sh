@@ -1,14 +1,37 @@
-#!/bin/zsh
+#!/bin/bash
 
 set -eufo pipefail
 
-# Install mac os configuration
-echo '🖥   Configuring macos.'
+# Ask for the administrator password upfront and continuously refresh it in the background
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+echo "🌹 Setting up Rosetta."
+if ! pgrep -x "oahd" > /dev/null 2>&1; then
+  sudo /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+  if [[ $? -eq 0 ]]; then
+    echo "🌹 Rosetta has been successfully installed."
+  else
+    echo "💀 Rosetta installation failed!"
+    exit 1
+  fi
+fi
+
+echo "🖥 Setting up Xcode command line tools."
+if ! xcode-select -p > /dev/null 2>&1; then
+  sudo xcode-select --install
+  if [[ $? -eq 0 ]]; then
+    echo "🖥 Xcode command line tools have been successfully installed."
+  else
+    echo "💀 Xcode command line tools installation failed!"
+    exit 1
+  fi
+fi
+
+echo '🍎 Configuring macos.'
 
 # Close any open System Preferences panes, to prevent them from overriding the settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
-
-# ~/.macos — https://mths.be/macos
 
 ###############################################################################
 # General UI/UX                                                               #
