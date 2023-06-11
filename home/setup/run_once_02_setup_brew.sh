@@ -2,7 +2,7 @@
 
 set -eufo pipefail
 
-echo "🍺 Creating a new Brewfile"
+echo "🍺 Installing homebrew bundle"
 
 # Dump existing  bundle to file
 brew bundle dump --force --global
