@@ -89,15 +89,6 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 # Trackpad                                                                    #
 ###############################################################################
 
-# Use all F1, F2, etc. keys as standard function keys (requires restart)
-defaults write -g com.apple.keyboard.fnState -bool true
-
-# Enable tap to click for this user and for the login screen
-defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
 # Enable three finger drag
 #defaults write com.apple.AppleMultitouchTrackpad Dragging -int 1
 #defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -int 1
@@ -110,7 +101,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.finder QuitMenuItem -bool true
 
 # Show path bar
-defaults write com.apple.finder ShowPathbar -bool true
+# defaults write com.apple.finder ShowPathbar -bool true
 
 # Link iCloud to home directory
 ln -sf $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/ $HOME/iCloud
