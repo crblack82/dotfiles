@@ -6,7 +6,6 @@ set -eufo pipefail
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-echo "🌹 Setting up Rosetta."
 if ! pgrep -x "oahd" > /dev/null 2>&1; then
   sudo /usr/sbin/softwareupdate --install-rosetta --agree-to-license
   if [[ $? -eq 0 ]]; then
@@ -17,7 +16,6 @@ if ! pgrep -x "oahd" > /dev/null 2>&1; then
   fi
 fi
 
-echo "🖥 Setting up Xcode command line tools."
 if ! xcode-select -p > /dev/null 2>&1; then
   sudo xcode-select --install
   if [[ $? -eq 0 ]]; then
