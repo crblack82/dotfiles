@@ -1,2 +1,0 @@
-# Wait 60 seconds before timing out
-connect-timeout = 60

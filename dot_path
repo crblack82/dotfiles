@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/opt/curl/bin:/Users/$USER/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
