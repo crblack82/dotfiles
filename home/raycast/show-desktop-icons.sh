@@ -1,16 +1,18 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title JSON to YAML
+# @raycast.title Show Desktop Icons
 # @raycast.mode silent
 
 # Optional parameters:
 # @raycast.icon 🤖
-# @raycast.packageName Developer Utils
+# @raycast.packageName Privacy Tools
 
 # Documentation:
 # @raycast.author Carson Black
 # @raycast.authorURL https://github.com/crblack82
 
-pbpaste | yq eval -P - | pbcopy
+defaults write com.apple.finder CreateDesktop -bool true
+
+killall "Finder" 2>/dev/null
