@@ -126,7 +126,6 @@ cask "transmit"
 cask "visual-studio-code"
 cask "vmware-horizon-client"
 cask "wireshark"
-cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "CotEditor", id: 1024640650
