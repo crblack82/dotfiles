@@ -1,4 +1,6 @@
-#!/bin/zsh
+#!/usr/bin/env fish
+
+set -eufo pipefail
 
 # Aliases
 alias -s cat "ccat"
