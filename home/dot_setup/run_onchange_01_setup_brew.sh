@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-set -eufo pipefail
-
 echo "🍺 Installing homebrew bundle"
 
 # Install bundle

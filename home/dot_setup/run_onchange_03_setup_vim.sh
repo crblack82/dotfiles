@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-set -eufo pipefail
-
 # Installing Sensible plugin
 if [ ! -d "$HOME/.vim/pack/myplugins/start/sensible" ]; then
 	git clone https://tpope.io/vim/sensible.git

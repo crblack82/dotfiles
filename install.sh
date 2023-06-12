@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -eufo pipefail
-
 clear
 read -p "🤚 This script will setup homebrew and chezmoi. Press [Enter] to continue."
 
