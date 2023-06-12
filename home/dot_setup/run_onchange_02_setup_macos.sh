@@ -40,9 +40,6 @@ osascript -e 'tell application "System Preferences" to quit'
 # Disable the sound effects on boot
 sudo nvram StartupMute=%01
 
-# Set highlight color to green
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
-
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
