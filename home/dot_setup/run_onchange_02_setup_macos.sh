@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-set -eufo pipefail
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -225,6 +223,6 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
-#for app in "Dock" "Finder" "Safari"; do killall "${app}" 2>/dev/null; done
+for app in "Dock" "Finder" "Safari"; do killall "${app}" 2>/dev/null; done
 
 echo '🍎 Configuring complete.'
