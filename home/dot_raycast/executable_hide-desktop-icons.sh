@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Show Desktop Icons
+# @raycast.title Hide Desktop Icons
 # @raycast.mode silent
 
 # Optional parameters:
@@ -13,6 +13,6 @@
 # @raycast.author Carson Black
 # @raycast.authorURL https://github.com/crblack82
 
-defaults write com.apple.finder CreateDesktop -bool true
+defaults write com.apple.finder CreateDesktop -bool false
 
-killall "Finder" 2>/dev/null
+#killall "Finder" 2>/dev/null
