@@ -1,3 +1,6 @@
+#!/bin/zsh
+
+set -eufo pipefail
 
 # Aliases
 alias -s cat "ccat"
