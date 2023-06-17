@@ -1,3 +1,3 @@
 function fish_greeting
-    fish_logo blue cyan green
+    fish_logo brblue brcyan brgreen
 end
