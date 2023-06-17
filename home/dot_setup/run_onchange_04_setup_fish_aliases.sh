@@ -2,7 +2,6 @@
 
 # Aliases
 alias -s cat "ccat"
-alias -s ls "exa"
 alias -s cleanup "find . -type f -name '*.DS_Store' -ls -delete"
 alias -s dl "cd ~/Downloads"
 alias -s dt "cd ~/Desktop"
