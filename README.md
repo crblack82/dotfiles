@@ -4,7 +4,7 @@ Carson Black's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/che
 
 Install them with:
 
-    chezmoi init crblack82
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/crblack82/dotfiles/master/install.sh)"
 
 Assumes installation of:
 
