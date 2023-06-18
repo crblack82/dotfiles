@@ -11,7 +11,6 @@ else
 fi
 
 if ! which chezmoi >/dev/null 2>&1; then
-else
 	echo "👊 Installing chezmoi."
 	brew install chezmoi	
 fi
