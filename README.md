@@ -5,3 +5,8 @@ Carson Black's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/che
 Install them with:
 
     chezmoi init crblack82
+
+Assumes installation of:
+
+* homebrew
+* chezmoi
