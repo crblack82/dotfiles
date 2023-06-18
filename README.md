@@ -1,13 +1,7 @@
 # github.com/crblack82/dotfiles
 
-## Install (New Machine)
+Carson Black's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/chezmoi).
 
-```shell
-chezmoi init crblack82
-```
+Install them with:
 
-## Update (Existing Machine)
-
-```shell
-chezmoi update
-```
+    chezmoi init crblack82
