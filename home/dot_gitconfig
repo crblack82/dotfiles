@@ -4,5 +4,5 @@
 	github = crblack82
 
 [core]
-	editor = vim
+	editor = nvim
 

@@ -12,7 +12,6 @@ fzf_configure_bindings --directory=\cf --git_log=\cL --git_status=\cS --history=
 function nvm
    bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
 end
-
 set -x NVM_DIR ~/.nvm
 nvm use default --silent
 
