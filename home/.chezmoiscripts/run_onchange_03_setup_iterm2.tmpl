@@ -1,11 +1,8 @@
 #!/usr/bin/env fish
 
-set autolaunch_dir "/Users/$USER/Library/Application\ Support/iTerm2/Scripts/AutoLaunch/"
+set autolaunch_dir "/Users/$USER/Library/Application\ Support/iTerm2/Scripts/AutoLaunch"
 mkdir -p $autolaunch_dir
-
-set file_path "{{ joinPath $autolaunch_dir 'AutoSwitchTheme.py' | quote }}"
-
-echo 
+set file_path "$autolaunch_dir/AutoSwitchTheme.py"
 
 echo '#!/usr/bin/env python3
 
