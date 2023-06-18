@@ -3,6 +3,10 @@
 set autolaunch_dir "/Users/$USER/Library/Application\ Support/iTerm2/Scripts/AutoLaunch/"
 mkdir -p $autolaunch_dir
 
+set file_path "{{ joinPath $autolaunch_dir 'AutoSwitchTheme.py' | quote }}"
+
+echo 
+
 echo '#!/usr/bin/env python3
 
 import asyncio
@@ -37,4 +41,4 @@ async def main(connection):
             await changeTheme(parts, connection)
 
 
-iterm2.run_forever(main)' > $autolaunch_dir/AutoSwitchTheme.py
+iterm2.run_forever(main)' > $file_path
