@@ -3,14 +3,14 @@
 set -eufo pipefail
 
 
-if which brew >/dev/null 2>&1; then
+if command -v brew &>/dev/null; then
 	brew update --quiet
 else
 	echo "🍺 Installing Homebrew."
 	/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"	
 fi
 
-if ! which chezmoi >/dev/null 2>&1; then
+if command -v chezmoi &> /dev/null; then
 	echo "👊 Installing chezmoi."
 	brew install chezmoi	
 fi
