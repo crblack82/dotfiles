@@ -1,10 +1,4 @@
-#!/usr/bin/env fish
-
-set autolaunch_dir "/Users/$USER/Library/Application\ Support/iTerm2/Scripts/AutoLaunch"
-mkdir -p $autolaunch_dir
-set file_path "$autolaunch_dir/AutoSwitchTheme.py"
-
-echo '#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import asyncio
 import iterm2
@@ -38,4 +32,4 @@ async def main(connection):
             await changeTheme(parts, connection)
 
 
-iterm2.run_forever(main)' > "$file_path"
+iterm2.run_forever(main)

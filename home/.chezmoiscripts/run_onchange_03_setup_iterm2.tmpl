@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+set autolaunch_dir "/Users/$USER/Library/Application\ Support/iTerm2/Scripts/AutoLaunch"
+mkdir -p $autolaunch_dir
+set src_file_path {{ joinPath .chezmoi.sourceDir "AutoSwitchTheme.py" | quote }}
+set dest_file_path "$autolaunch_dir/AutoSwitchTheme.py"
+
+echo $src_file_path
+echo $dest_file_path
+
+cp $src_file_path $dest_file_path
