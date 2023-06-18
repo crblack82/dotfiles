@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+set -eufo pipefail
+
 # ENV
 set -Ux EDITOR nvim
 set -Ux JAVA_HOME /Library/Java/JavaVirtualMachines/temurin-20.jdk/Contents/Home
