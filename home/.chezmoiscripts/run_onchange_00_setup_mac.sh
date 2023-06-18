@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eufo pipefail
+
 # Ask for the administrator password upfront
 sudo -v
 
