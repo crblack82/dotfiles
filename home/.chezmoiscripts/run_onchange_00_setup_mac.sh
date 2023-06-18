@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eufo pipefail
+set -e # -e: exit on error
 
 # Ask for the administrator password upfront
 sudo -v
