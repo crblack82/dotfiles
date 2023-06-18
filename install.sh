@@ -22,10 +22,8 @@ else
 fi
 
 if [ -d "$HOME/.local/share/chezmoi/.git" ]; then
-  echo "🚸 Chezmoi already initialized. Reinitialize with: 'chezmoi init https://github.com/crblack82/dotfiles.git'"
+  chezmoi update --apply
 else
   echo "🚀 Initializing dotfiles."
-  chezmoi init https://github.com/crblack82/dotfiles.git
+  chezmoi init --apply https://github.com/crblack82/dotfiles.git
 fi
-
-chezmoi init --apply https://github.com/crblack82/dotfiles.git
