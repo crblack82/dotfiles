@@ -180,6 +180,8 @@ defaults write com.apple.Safari WebAutomaticSpellingCorrectionEnabled -bool fals
 ###############################################################################                                                #
 ###############################################################################
 
+unset +eufo pipefail
+
 # Kill any affected apps
 for app in "Dock" "Finder" "Safari"; do killall "${app}" 2>/dev/null; done
 
