@@ -1,26 +1,26 @@
-#!/bin/bash
+#!/bin/sh
+
+set -e # -e: exit on error
 
 clear
-read -p "🤚 This script will setup homebrew and chezmoi. Press [Enter] to continue."
+read -p "🤚 This script will setup chezmoi configure dot files. Press [Enter] to continue."
 
-
-if which brew >/dev/null 2>&1; then
-	echo "🍺 Homebrew is already installed"
-	brew update --quiet
+if [ ! "$(command -v chezmoi)" ]; then
+  bin_dir="$HOME/.local/bin"
+  chezmoi="$bin_dir/chezmoi"
+  if [ "$(command -v curl)" ]; then
+    sh -c "$(curl -fsSL https://git.io/chezmoi)" -- -b "$bin_dir"
+  elif [ "$(command -v wget)" ]; then
+    sh -c "$(wget -qO- https://git.io/chezmoi)" -- -b "$bin_dir"
+  else
+    echo "To install chezmoi, you must have curl or wget installed." >&2
+    exit 1
+  fi
 else
-	echo "🍺 Installing Homebrew."
-	/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"	
+  chezmoi=chezmoi
 fi
 
-if which chezmoi >/dev/null 2>&1; then
-	echo "👊 Chezmoi is already installed."
-else
-	echo "👊 Installing chezmoi."
-	brew install chezmoi	
-fi
-
-if [ -d "$HOME/.local/share/chezmoi/.git" ]; then
-  echo "🚸 Chezmoi already initialized. Reinitialize with: 'chezmoi init https://github.com/crblack82/dotfiles.git'"
-fi
-
-chezmoi init --apply https://github.com/crblack82/dotfiles.git
+# POSIX way to get script's dir: https://stackoverflow.com/a/29834779/12156188
+script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
+# exec: replace current process with chezmoi init
+exec "$chezmoi" init --apply "--source=$script_dir"
