@@ -17,3 +17,6 @@ nvm use default --silent
 
 # pyenv integration
 pyenv init - | source
+
+# thefuck integration
+thefuck --alias | source
