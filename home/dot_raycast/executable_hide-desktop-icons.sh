@@ -15,4 +15,4 @@
 
 defaults write com.apple.finder CreateDesktop -bool false
 
-#killall "Finder" 2>/dev/null
+killall "Finder" 2>/dev/null
