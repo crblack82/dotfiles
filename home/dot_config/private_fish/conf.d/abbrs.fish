@@ -14,14 +14,14 @@ abbr -a -- vim nvim
 abbr -a -- vi nvim
 
 # ls
-abbr -a -- l 'ls -UF'
-abbr -a -- la 'ls -la'
-abbr -a -- ldot 'ls -ld .*'
-abbr -a -- ll 'ls -lGFh'
-abbr -a -- lsa 'ls -aGF'
+abbr -a -- "l 'ls -UF"
+abbr -a -- "la 'ls -la"
+abbr -a -- "ldot 'ls -ld .*"
+abbr -a -- "ll 'ls -lGFh"
+abbr -a -- "lsa 'ls -aGF"
 
 # ip
 abbr -a -- ip "dig +short myip.opendns.com @resolver1.opendns.com"
-abbr -a -- localip 'ipconfig getifaddr en0'
+abbr -a -- localip "ipconfig getifaddr en0"
 
 set -g MY_ABBRS_INITIALIZED true
