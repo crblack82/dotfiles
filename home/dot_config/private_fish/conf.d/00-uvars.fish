@@ -1,4 +1,4 @@
-set -q MY_UVARS_SET and return
+set -q MY_UVARS_SET; and return
 
 set -Ux EDITOR nvim
 set -Ux HOMEBREW_NO_ENV_HINTS true
