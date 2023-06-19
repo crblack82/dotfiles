@@ -2,6 +2,16 @@
 	name = Carson Black
 	email = crblack82@gmail.com
 	github = crblack82
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHqz6RqINd7EWLE67uGcn2kaR6bB8o96R2UufyjOdu/U
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [core]
 	editor = nvim
