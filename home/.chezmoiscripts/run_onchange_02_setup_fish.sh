@@ -13,7 +13,7 @@ fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin $fish_user_paths
 fish_add_path /Users/$USER/Library/Application Support/JetBrains/Toolbox/scripts
 
 # ALIAS
-alias -s cat "ccat"
+abbr cat "ccat"
 alias -s cleanup "find . -type f -name '*.DS_Store' -ls -delete"
 alias -s dl "cd ~/Downloads"
 alias -s dt "cd ~/Desktop"
