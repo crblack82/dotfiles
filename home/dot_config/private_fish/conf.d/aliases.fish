@@ -1,0 +1,3 @@
+set -q MY_ALIASES_INITIALIZED; and return
+
+set -g MY_ALIASES_INITIALIZED true
