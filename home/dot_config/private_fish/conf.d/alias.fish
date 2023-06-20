@@ -1,3 +1,3 @@
-set -q MY_ALIASES_INITIALIZED; and return
+set -q MY_ALIAS_INITIALIZED; and return
 
-set -g MY_ALIASES_INITIALIZED true
+set -g MY_ALIAS_INITIALIZED true

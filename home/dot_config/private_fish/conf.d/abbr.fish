@@ -1,4 +1,4 @@
-set -q MY_ABBRS_INITIALIZED; and return
+set -q MY_ABBR_INITIALIZED; and return
 
 abbr -a -- c clear
 abbr -a -- cat "ccat"
@@ -24,4 +24,4 @@ abbr -a -- "lsa 'ls -aGF"
 abbr -a -- ip "dig +short myip.opendns.com @resolver1.opendns.com"
 abbr -a -- localip "ipconfig getifaddr en0"
 
-set -g MY_ABBRS_INITIALIZED true
+set -g MY_ABBR_INITIALIZED true
