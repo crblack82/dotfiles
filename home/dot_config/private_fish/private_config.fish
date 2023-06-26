@@ -12,6 +12,10 @@ fzf_configure_bindings --directory=\cf --git_log=\cL --git_status=\cS --history=
 set -x NVM_DIR ~/.nvm
 nvm use default --silent
 
+# gvm integration
+set -x GVM_DIR ~/.gvm
+gvm use default --silent
+
 # pyenv integration
 pyenv init - | source
 
