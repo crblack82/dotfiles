@@ -1,4 +1,3 @@
-
 tap "1password/tap"
 tap "aws/tap"
 tap "buo/cask-upgrade"
@@ -219,6 +218,7 @@ vscode "vscjava.vscode-maven"
 vscode "vscjava.vscode-spring-boot-dashboard"
 vscode "vscjava.vscode-spring-initializr"
 vscode "vscode-icons-team.vscode-icons"
+vscode "vscodevim.vim"
 vscode "wholroyd.jinja"
 vscode "zhuangtongfa.material-theme"
 vscode "ziyasal.vscode-open-in-github"
