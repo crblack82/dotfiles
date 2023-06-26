@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
 
 if ! test -d ~/.gvm
-	bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+	sh -c "$(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)"
 end
