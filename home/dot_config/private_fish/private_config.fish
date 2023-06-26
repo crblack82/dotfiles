@@ -14,7 +14,6 @@ nvm use default --silent
 
 # gvm integration
 set -x GVM_DIR ~/.gvm
-gvm use default --silent
 
 # pyenv integration
 pyenv init - | source
