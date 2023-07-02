@@ -165,6 +165,11 @@ defaults write NSGlobalDomain NSLinguisticDataAssetsRequested -array en en_US
 defaults write NSGlobalDomain NSUserDictionaryReplacementItems -array
 
 ###############################################################################
+# Mission Control
+###############################################################################
+defaults write com.apple.dock expose-group-by-app -bool true
+
+###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
 
