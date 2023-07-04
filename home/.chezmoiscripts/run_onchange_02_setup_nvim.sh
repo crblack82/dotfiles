@@ -3,3 +3,7 @@
 if ! test -e ~/.config/nvim/init.lua
     git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim
 end
+
+if ! test -d ~/.config/nvim/tpm
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+end
