@@ -106,6 +106,7 @@ cask "jprofiler"
 cask "little-snitch"
 cask "microsoft-edge"
 cask "microsoft-teams"
+cask "nordvpn", args: { appdir: "/Applications" }
 cask "nosql-workbench"
 cask "notion"
 cask "pdf-expert"
