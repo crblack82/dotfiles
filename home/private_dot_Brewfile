@@ -112,7 +112,6 @@ cask "nordvpn", args: { appdir: "/Applications" }
 cask "nosql-workbench"
 cask "notion"
 cask "pdf-expert"
-cask "plug"
 cask "postman"
 cask "proxyman"
 cask "raycast"
